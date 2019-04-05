@@ -2,17 +2,21 @@ import React, { Component } from 'react';
 import './App.css';
 import Clock from 'react-live-clock';
 
+/*
+@author Michael Field Derby
+Created on April 1, 2019
+*/
 class App extends Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          {/* <img src={logo} className="App-logo" alt="logo" /> */}
           <p>
            Time Zones
           </p>
 
         </header>
+        {/* pacific time */}
         <div class="california">
         <p>
           Time in California
@@ -23,6 +27,7 @@ class App extends Component {
                   timezone={'US/Pacific'}/>
 
       </div>
+      {/* Mountain time */}
       <div class="colorado">
       <p>
             Time in Colorado
@@ -32,6 +37,7 @@ class App extends Component {
                   ticking={true}
                   timezone={'US/Mountain'}/>
       </div>
+      {/* Eastern time */}
       <div class="newyork">
       <p>
       Time in New York
@@ -41,6 +47,7 @@ class App extends Component {
                   ticking={true}
                   timezone={'US/Eastern'}/>
       </div>
+      {/* Footer provides link to a cite that has more time zone information */}
       <footer className="App-footer">
       <a
             className="App-link"
